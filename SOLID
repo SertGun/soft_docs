@@ -7,4 +7,29 @@ to develop a more understandable, flexible and maintainable code should know abo
 You may actually heard of Solid rules and principles from your colleagues in other forms/terms such as “good/clean code guidelines” 
 or you might already be using these principles not knowing them by SOLID principles. 
 
-S.O.L.I.D is a combination of 5 principles. 
+ 
+S.O.L.I.D is a combination of 5 principles.  These principles guide us to have higher quality software that is clear, readable, testable,
+maintainable, modifiable, modular, layered, efficient, elegant, and works with low error/bug rate. (Skipping more basic guidelines such as
+naming conventions, indentation, etc.)
+
+SRP (Single Responsibility Principle)
+
+Either you know the acronym or not this is one of the basic principles most of us apply every day to build more robust software that is 
+easy to maintain (either by developer him/herself or peers)
+
+•	Every module, class, or function (software component, micro service) should have responsibility over a single part of the functionality
+provided by the software, and that responsibility should be entirely encapsulated by the class. 
+•	Classes should have a very singular purpose/responsibility
+•	If there are multiple reasons for a class to change, then that class is doing too much and you should consider separating it into two or 
+more specific classes.
+•	If your answer to the following questions includes the word “and” you are breaking the SRP “What is the responsibility of your 
+class/component/micro service?”
+
+Why use SRP? 
+•	Initial requirements do change over time which forces us to modify our code; (classes and functions).  You should have independent 
+responsibilities handled by each of classes to avoid updating dependencies or to re-compile dependent classes (either they are directly
+affected by the changes or not)
+•	SRP improves code quality by reducing regression bugs by preventing unexpected side-effect of future changes. 
+•	As SRP forces us to handle single responsibility it is easier to read, explain and implement classes/functions compared to handling
+multi-responsibilities. Reduces dev speed and makes it easier to mentor Jr developers. 
+
